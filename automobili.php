@@ -1,104 +1,79 @@
 <?php
-session_start();
-
+    session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <title>Automobili</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <head>
+        <title>Automobili</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>  
+        <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="https://www.gortani.com/" class="logo"> <img class= "images" src="./images/Gortani_Logo - Copia.png" alt=""/> </a>
+            <nav class="navbar">
+                <a href="./stanze.php">stanze</a>
+                <a href="./index.php">home</a>
+                <a href="./automobili.php">automobili</a>
+                <?php
+                    if(isset($_SESSION['email'])){
+                        echo"<a href='profilo.php'>profilo</a>";
+                    }
+                ?>
+            </nav>
+            <?php
+                $path = "./script/logout.php";
+                
+                if(!isset($_SESSION['email'])){
+                    echo "<div id='login-btn'>
+                        <button class='btn'>Login</button>
+                        <i class='far fa-user'></i>
+                    </div>";
+                }
+                else{
+                    echo "<div id='login-btn'>
+                        <a href='$path'>
+                            <button class='btn'>Esci</button>
+                        </a>
+                    </div>";
+                }
+            ?>
+        </header> 
+        <div class="login-form-container">
+            <span id="close-login-form" class="fas fa-times"></span>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-</head>
-<body>
-    
-<header class="header">
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-    <a href="https://www.gortani.com/" class="logo"> <img class= "images" src="./images/Gortani_Logo - Copia.png" alt=""/> </a>
-
-    <nav class="navbar">
-        <a href="./stanze.php">stanze</a>
-        <a href="./index.php">home</a>
-        <a href="./automobili.php">automobili</a>
-        <?php
-            if(isset($_SESSION['email'])){
-            echo"<a href='profilo.php'>profilo</a>";
-            }
-        ?>
-
-    </nav>
-
-    <?php
-    $path = "./script/logout.php";
-    if(!isset($_SESSION['email'])){
-      echo"<div id='login-btn'>
-        <button class='btn'>Login</button>
-        <i class='far fa-user'></i>
-      </div>";
-    }else{
-      echo"<div id='login-btn'><a href='$path'>
-      <button class='btn'>Esci</button>
-  </a></div>";
-    }
-
-  
-  ?>
-
-</header> 
-    
-<div class="login-form-container">
-
-    <span id="close-login-form" class="fas fa-times"></span>
-
-    <form action="./script/login_auto.php" method="post">
-        <h3>ACCEDI</h3>
-        <input type="email" placeholder="email" class="box" name="email">
-        <input type="password" placeholder="password" class="box" name="password">
-        
-        <input type="submit" value="login" class="btn">
-        
-       
-        
-    </form>
-</div>
-
-<section class="home" id="home">
-
-    <h3 data-speed="-2" class="home-parallax">Prenota</h3>
-
-    <img data-speed="5" class="home-parallax" src="images/home-img.png" alt="">
-
-    <a data-speed="7" href="#vehicles" class="btn home-parallax">Macchine</a>
-
-</section>
-
-<section class="icons-container" id="regole">
-    <h1></h1>
-    <h1></h1>
-    <h1 class="heading"> Regole  </h1>
-    
-    <h1></h1>
-    <h1></h1>
-    <div class="icons">
-    <i class="fa-solid fa-square-parking"></i>
-        <div class="content">
-            <h3>Parcheggio</h3>
-            <p>Parcheggiarla nel posto designato</p>
+            <form action="./script/login_auto.php" method="post">
+                <h3>ACCEDI</h3>
+                <input type="email" placeholder="email" class="box" name="email">
+                <input type="password" placeholder="password" class="box" name="password">
+                <input type="submit" value="login" class="btn">
+            </form>
         </div>
+        <section class="home" id="home">
+            <h3 data-speed="-2" class="home-parallax">Prenota</h3>
+            <img data-speed="5" class="home-parallax" src="images/home-img.png" alt="">
+            <a data-speed="7" href="#vehicles" class="btn home-parallax">Macchine</a>
+        </section>
+        <section class="icons-container" id="regole">
+            <h1></h1>
+            <h1></h1>
+            <h1 class="heading"> Regole  </h1>
+            <h1></h1>
+            <h1></h1>
+            <div class="icons">
+                <i class="fa-solid fa-square-parking"></i>
+                <div class="content">
+                    <h3>Parcheggio</h3>
+                    <p>Parcheggiarla nel posto designato</p>
+                </div>
     </div>
 
     <div class="icons">
