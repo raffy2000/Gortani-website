@@ -1,5 +1,6 @@
 <?php
     include("./CONNESSIONE.php");
+
     if(isset($_POST['email']) && isset($_POST['password'])){
         $query = "SELECT email, password FROM Dipendenti WHERE email='".$_POST['email']."'";
         echo $query;
@@ -13,6 +14,7 @@
                 exit();
             }
         }
+        
         header("location: ./LOGIN.php");
         exit();
     }
