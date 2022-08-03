@@ -4,8 +4,7 @@ USE DbGortani;
 
 CREATE TABLE Dipendenti(
     idDipendenti INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    email VARCHAR(50) NOT NULL
-    CHECK(email LIKE '%@%.%'),
+    email VARCHAR(50) NOT NULL CHECK(email LIKE '%@%.%'),
     password VARCHAR(60) NOT NULL
 );
 
