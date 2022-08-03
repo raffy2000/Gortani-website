@@ -74,19 +74,17 @@
                     <h3>Parcheggio</h3>
                     <p>Parcheggiarla nel posto designato</p>
                 </div>
-    </div>
-
-    <div class="icons">
-    <i class="fa-solid fa-shower"></i>
-        <div class="content">
-            <h3>Pulizia</h3>
-            <p>La macchina deve rimanere pulità</p>
-        </div>
-    </div>
-
-    <div class="icons">
-    <i class="fa-solid fa-road"></i>
-        <div class="content">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-shower"></i>
+                <div class="content">
+                    <h3>Pulizia</h3>
+                    <p>La macchina deve rimanere pulità</p>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-road"></i>
+                <div class="content">
             <h3>Codice della strada</h3>
             <p>E' tassativo il rispetto delle regole della strada</p>
         </div>
