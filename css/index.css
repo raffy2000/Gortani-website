@@ -1,0 +1,161 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+
+
+
+
+
+
+
+
+.main {
+  width: 100%;
+  height: 40vh;
+
+
+
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+.logo2 {
+  
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+}
+
+
+.images {
+  height: 60px;
+  width: 170px;
+}
+
+
+
+
+.welcome_text {
+  color: #fff;
+}
+
+
+
+.button {
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: hsl(240, 10%, 41%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: hsl(0, 0%, 44%);
+}
+
+.button:active {
+  background: hsl(240, 18%, 40%);
+}
+
+.button_text,
+.button_icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+
+.button_icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+
+
+/* Room Form */
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.btn-success.focus,
+.btn-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #1e7e34;
+  border-color: #1c7430;
+}
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+
+.button-red {
+  color: #fff;
+  background-color: #a72828;
+  border-color: #a72828;
+}
+
+
+/* Profile cards */
+.room, .car{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px rgb(255, 230, 0) solid;
+  border-radius: 25px;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px rgb(255, 230, 0) solid;
+  border-radius: 25px;
+}
+
+.card-header {
+  height: 30%;
+  background: rgb(255, 217, 0);
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+
+.card-container {
+  padding: 2px 16px;
+}

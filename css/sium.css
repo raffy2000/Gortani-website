@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+
+
+.checkbox-card{
+	border: 1px solid #f4f4f4;
+	padding: 15px;
+}
+
+.passport-box{
+	display: none
+}
+
+.apply-box{
+	margin-top: 10px;
+	display: none
+}
