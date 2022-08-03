@@ -2,7 +2,6 @@
     $type=$_GET['type'];
     $id=$_GET['id'];
 
-    
     include("CONNESSIONE.php");
 
     $conn = new mysqli($host, $username, $pass, $db);
