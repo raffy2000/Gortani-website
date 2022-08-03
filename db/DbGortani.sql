@@ -46,7 +46,7 @@ INSERT INTO Automobili VALUES
     (1,'EZ667SJ','VOLVO V40','grigia','7','Usata','Manuale','Gasolio'),
     (2,'FG709MR','FIAT 500L','rossa','6','Usata','Manuale','Gasolio'),
     (3,'FK770JC', 'CYTROEN C3 PICASSO','bianca','3','Usata','Manuale','Gasolio'),
-    (4,'FA578GR', 'DOBLO', 'bianca','bianca', 'Magazzino','Usata','Manuale','Gasolio'),  
+    (4,'FA578GR', 'DOBLO', 'bianca', 'Magazzino','Usata','Manuale','Gasolio'),  
     (5,'FB726BD', 'DOBLO','grigia','5','Usata','Manuale','Gasolio'); 
 
 
@@ -79,12 +79,7 @@ CREATE TABLE prenotazioni_automobili(
     prenotazione_automobile INTEGER NOT NULL,
     FOREIGN KEY(prenotazione_dipendente) REFERENCES Dipendenti(idDipendenti) ON UPDATE RESTRICT ON DELETE RESTRICT,
     FOREIGN KEY(prenotazione_automobile) REFERENCES Automobili(idAuto) ON UPDATE RESTRICT ON DELETE RESTRICT
-    
-
-
 );
-
-
 
 
 DROP DbGortani;

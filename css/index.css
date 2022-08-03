@@ -1,19 +1,9 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css?family=Numans");
 
-
-
-
-
-
-
-
-
 .main {
   width: 100%;
   height: 40vh;
-
-
 
   padding: 30px;
   display: flex;
@@ -21,9 +11,7 @@
   justify-content: space-around;
 }
 
-
 .logo2 {
-  
   width: 60%;
   display: flex;
   justify-content: space-around;
@@ -31,20 +19,14 @@
   align-items: center;
 }
 
-
 .images {
   height: 60px;
   width: 170px;
 }
 
-
-
-
 .welcome_text {
   color: #fff;
 }
-
-
 
 .button {
   display: flex;
@@ -82,12 +64,6 @@
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.08);
 }
-
-
-
-
-
-
 
 /* Room Form */
 .btn-success {
@@ -129,9 +105,9 @@
   border-color: #a72828;
 }
 
-
 /* Profile cards */
-.room, .car{
+.room,
+.car {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,23 +1,12 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css?family=Numans");
 
-
-
-
-
 .logos {
-  
   width: 33%;
-  display:flex;
-  
+  display: flex;
 }
 
-
-
-
-
 .logo2 {
-  
   width: 60%;
   display: flex;
   justify-content: space-around;
@@ -25,23 +14,14 @@
   align-items: center;
 }
 
-
-
 .images {
   height: 60px;
   width: 170px;
 }
 
-
-
-
-
 .welcome_text {
   color: #fff;
 }
-
-
-
 
 .button {
   display: flex;
@@ -81,9 +61,6 @@
 }
 
 /* Footer */
-
-
-
 
 /* Room Form */
 .btn-success {
@@ -126,4 +103,3 @@
 }
 
 /* Sizing */
-
