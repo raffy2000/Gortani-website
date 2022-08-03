@@ -49,8 +49,30 @@
             $giorni="$anni-$mesi-$currentDayRel";
             $dayName=strtolower(date('I',strtotime($giorni)));
             $oggi = "$giorni==date('Y-m-d')?'today':";
-            $calendario.="<td class='$oggi'><h3>$currentDay</h3><button class='btn btn-success'>PRENOTA</td>";
+            
+            $calendario.="<td class='$oggi'><h3>$currentDay</h3><div id='prenota-btn'>
+            <button class='btn btn-success'>PRENOTA</button>
+          </div></td>";
             //href='add_car.php?t=$targa&'
+            echo "
+        <div class='prenota-form-container'>
+          <span id='close-prenota-form' class='fas fa-times'></span>
+
+          <form action='' method='post'>
+            <h3>PRENOTA</h3>
+          
+            <label for='oraInizio'><b>ORA DI INIZIO</b></label>
+            <input type='time' class='box' id='oraInizio' name='oraInizio'>
+
+            <label for='oraFine'><b>ORA DI FINE </b></label>
+            <input type='time' class='box' id='oraFine' name='oraFine'>
+
+            <input type='submit' value='Prenota' class='btn'>
+        
+        
+          
+          </form>
+        </div>";
             $currentDay++;
             $gionodellasettimana ++;
         }
